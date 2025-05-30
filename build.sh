@@ -6,7 +6,7 @@ docker tag bia:latest 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:$versao
 docker push 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:$versao
 rm .env
 ./gerar-compose.sh
-rm bia-versao*.zip
-zip bia-versao-$versao.zip docker-compose.yml
+rm bia-versao.zip
+zip bia-versao.zip docker-compose.yml
 git checkout docker-compose.yml
 
