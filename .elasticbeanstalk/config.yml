@@ -1,0 +1,21 @@
+deploy:
+  artifacts: bia-versao.zip
+branch-defaults:
+  main:
+    environment: Bia-dev-beanstalk-env
+  dev:
+    environment: Bia-dev-beanstalk-env
+environment-defaults:
+  Bia-dev-beanstalk-env: 
+global:
+  application_name: bia-dev-beanstalk
+  default_ec2_keyname: null
+  default_platform: Docker running on 64bit Amazon Linux 2023
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: bia
+  sc: git
+  workspace_type: Application
