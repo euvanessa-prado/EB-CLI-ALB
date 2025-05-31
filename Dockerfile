@@ -1,4 +1,6 @@
 FROM public.ecr.aws/docker/library/node:22-slim
+ARG BIA_API_URL
+RUN echo "Api da BIA: $BIA_API_URL"
 RUN npm install -g npm@11 --loglevel=error
 
 #Instalando o curl
@@ -12,7 +14,7 @@ RUN npm install --loglevel=error
 
 COPY . .
 
-RUN NODE_OPTIONS=--openssl-legacy-provider REACT_APP_API_URL=http://bia-dev-eb.us-east-1.elasticbeanstalk.com/ SKIP_PREFLIGHT_CHECK=true npm run build --prefix client
+RUN NODE_OPTIONS=--openssl-legacy-provider REACT_APP_API_URL=$BIA_API_URL SKIP_PREFLIGHT_CHECK=true npm run build --prefix client
 
 RUN mv client/build build
 

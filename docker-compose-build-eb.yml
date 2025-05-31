@@ -3,7 +3,7 @@ services:
     image: bia:latest
     build: 
      context: .
-     Dockerfile: Dockerfile
+     dockerfile: Dockerfile
      args:
         BIA_API_URL: http://bia-dev-eb.us-east-1.elasticbeanstalk.com/ 
     container_name: bia

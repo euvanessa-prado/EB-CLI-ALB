@@ -1,7 +1,7 @@
 services:
   server:
     container_name: bia
-    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:15558e2
+    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:${TAG}
     ports:
       - mode: ingress
         target: 8080
