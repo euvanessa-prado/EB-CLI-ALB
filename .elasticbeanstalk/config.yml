@@ -5,10 +5,6 @@ branch-defaults:
     environment: bia-dev-eb
     dev:
     environment: bia-dev-eb
-environment-defaults:
-  bia-dev-eb:
-    branch: null
-    repository: null
 global:
   application_name: bia-dev
   default_ec2_keyname: null
