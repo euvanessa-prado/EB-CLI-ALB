@@ -9,5 +9,5 @@ services:
       DB_USER: postgres
       DB_PWD: postgres10
       DB_PORT: 5432
-      DB_HOST: bia-dev-beanstalk.c29gca8kizzb.us-east-1.rds.amazonaws.com
+      DB_HOST: bia-eb.c29gca8kizzb.us-east-1.rds.amazonaws.com
       

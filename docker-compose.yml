@@ -7,7 +7,7 @@ services:
       DB_PORT: "5432"
       DB_PWD: postgres10
       DB_USER: postgres
-    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:04caa86
+    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:010a667
     ports:
       - mode: ingress
         target: 8080
