@@ -5,5 +5,6 @@ echo TAG=$versao >> .env
 
 docker compose -f docker-compose-eb.yml config --no-normalize >> docker-compose-dev.yml
 sed -i '/^name:/d' docker-compose-dev.yml
+sed -i '/^server:$/a \ env file: .env' docker-compose-dev.yml
 
 mv docker-compose-dev.yml docker-compose.yml
