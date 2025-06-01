@@ -1,4 +1,5 @@
 FROM public.ecr.aws/docker/library/node:22-slim
+
 ARG BIA_API_URL
 RUN echo "Api da BIA: $BIA_API_URL"
 RUN npm install -g npm@11 --loglevel=error

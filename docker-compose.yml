@@ -1,10 +1,9 @@
 services:
-  server:
-    build: .
+  bia:
+    container_name: bia
+    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:c43449b
     ports:
-      - 80:8080
-    environment:
-       DB_USER: postgres
-       DB_PWD: postgres10
-       DB_PORT: 5432
-      
+      - mode: ingress
+        target: 8080
+        published: "80"
+        protocol: tcp
