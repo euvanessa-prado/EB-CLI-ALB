@@ -1,6 +1,6 @@
 services:
   bia:
-    env_file: .env
+    
     container_name: bia
     environment:
       DB_HOST: bia-eb.c29gca8kizzb.us-east-1.rds.amazonaws.com
