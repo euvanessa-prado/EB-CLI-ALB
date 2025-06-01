@@ -1,10 +1,6 @@
 services:
   bia:
-    environment:
-      DB_HOST: bia-eb.c29gca8kizzb.us-east-1.rds.amazonaws.com 
-      DB_PORT: 5432
-      DB_USER: postgres
-      DB_PASSWORD: postgres10
+   
     container_name: bia
     image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:${TAG}
     ports:

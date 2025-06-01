@@ -1,0 +1,31 @@
+services:
+  
+  bia:
+    image: bialocal:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BIA_API_URL: http://bia-dev-eb.us-east-1.elasticbeanstalk.com/
+    container_name: bia
+    ports:
+      - 3001:8080
+    links:
+      - database
+    environment:
+      DB_USER: postgres
+      DB_PWD: postgres
+      DB_HOST: database
+      DB_PORT: 5432
+
+  database:
+    image: postgres:latest
+    ports:
+      - 5433:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:
+
+
