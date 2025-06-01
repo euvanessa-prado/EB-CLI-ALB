@@ -1,7 +1,13 @@
 services:
   bia:
+    env_file: .env
     container_name: bia
-    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:c43449b
+    environment:
+      DB_HOST: bia-eb.c29gca8kizzb.us-east-1.rds.amazonaws.com
+      DB_PASSWORD: postgres10
+      DB_PORT: "5432"
+      DB_USER: postgres
+    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:68972e5
     ports:
       - mode: ingress
         target: 8080
