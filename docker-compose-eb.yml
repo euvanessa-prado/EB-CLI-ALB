@@ -1,6 +1,5 @@
 services:
   bia:
-    env_file: .env
     image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:${TAG}
     container_name: bia
     ports:
