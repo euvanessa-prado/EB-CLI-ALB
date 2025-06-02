@@ -1,8 +1,6 @@
 services:
  bia:
     image: bia:latest
-    env_file:
-      - .env
     build: 
      context: .
      dockerfile: Dockerfile
