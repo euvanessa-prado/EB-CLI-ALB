@@ -10,7 +10,7 @@ environment-defaults:
     branch: null
     repository: null
 global:
-  application_name: bia-dev-eb
+  application_name: bia-dev
   default_ec2_keyname: null
   default_platform: Docker running on 64bit Amazon Linux 2023
   default_region: us-east-1
@@ -18,6 +18,6 @@ global:
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: null
+  profile: bia
   sc: git
   workspace_type: Application
