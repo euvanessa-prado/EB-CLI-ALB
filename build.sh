@@ -9,6 +9,6 @@ docker push 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:$versao
 rm .env 2> /dev/null
 ./gerar-compose.sh
 rm bia-versao.zip
-zip bia-versao.zip docker-compose.yml
+zip -r bia-versao.zip docker-compose.yml
 git checkout docker-compose.yml
 
