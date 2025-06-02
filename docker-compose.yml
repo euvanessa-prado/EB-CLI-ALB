@@ -2,7 +2,7 @@ services:
   bia:
     env_file: .env
     container_name: bia
-    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:a01323d
+    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:a3a12fe
     ports:
       - mode: ingress
         target: 8080
