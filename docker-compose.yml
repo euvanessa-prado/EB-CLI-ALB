@@ -3,8 +3,8 @@ services:
     env_file: .env
     container_name: bia
     environment:
-      TAG: "0067844"
-    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:0067844
+      TAG: d4482e1
+    image: 448522291635.dkr.ecr.us-east-1.amazonaws.com/bia:d4482e1
     ports:
       - mode: ingress
         target: 8080
