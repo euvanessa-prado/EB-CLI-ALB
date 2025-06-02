@@ -10,5 +10,5 @@ rm .env 2> /dev/null
 ./gerar-compose.sh
 rm bia-versao.zip
 zip -r bia-versao.zip docker-compose.yml
-git checkout docker-compose.yml
+#git checkout docker-compose.yml
 
